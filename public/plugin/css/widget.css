@@ -1,0 +1,98 @@
+#main-div-wrapper {
+	height: 0px;		
+	position: fixed;
+	right: 115px; /*used for right spacing from window*/
+	bottom: 0px; /*used for bottom spacing from window*/
+	width: 100%;
+	max-width: 400px;
+	/* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+}
+
+#main-div-wrapper.widget-toggle {
+	height: 620px !important;
+} 
+#main-div-wrapper{
+z-index: 999999999;
+}
+.chatbot-icon {
+    margin-bottom: 15px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.chatbot-icon img {
+	width:80px;
+    height: 80px; /*height always use auto*/
+    cursor: pointer;
+    border-radius: 100%;
+    background: orange; /*put backround color if you want below your icon any color*/
+}
+.chat-close {
+    background: url('https://png.icons8.com/color/180/delete-sign.png') no-repeat 0 0;
+    background-size: cover;
+}
+.chat-icon {
+    background: url('/images/picasi.png') no-repeat 0 0;
+    background-size: cover;
+}
+		
+#close-icon {
+	text-align:right;
+    width: 100%;
+    background: orange; /*put color according to you*/
+}
+
+#close-icon i {
+	cursor:pointer;
+	margin:10px;
+    height: auto;
+    max-width: 100%;
+    width: 32px;
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999;
+}
+
+@media(max-width:767px) {
+	#main-div-wrapper.widget-toggle {
+	    height: 100vh !important;
+		top:0px;
+		right:0px;
+	}
+	.chat-close {
+	    background-size: cover;
+	    top: 5px;
+	    z-index: 1000000000;
+	    width: auto;
+	    height: auto;
+	    margin-right: 5px;
+	    color: #fff;
+	    display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: inherit;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	    font-size: 20px;
+	}
+	.chat-close:before {
+	    content: "\f057";
+	}
+} 
